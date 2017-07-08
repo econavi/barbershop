@@ -7,41 +7,14 @@ block head
 
 block content
 	main.content
-			.content__main-logo
-				include ../../blocks/main-logo/main-logo
+			
+		include ../../blocks/main-logo/main-logo
+		include ../../blocks/pluses/pluses
 
-			.content__pluses
-				include ../../blocks/pluses/pluses
+		.content__rectangle
+			include ../../blocks/news/news
+			include ../../blocks/gallery/gallery
 
-			.content__sections-wrapper
-				.content__rectangle
-					section.content__section-item.news-section
-						h2.news-section__title Новости
-						include ../../blocks/news-preview/news-preview
-						a.news-section__btn.button(href="javascript:void(0);") Все новости
-
-					section.content__section-item.gallery-section
-						h2.gallery-section__title Фотогалерея
-						include ../../blocks/slider/slider
-
-				.content__rectangle
-					section.content__section-item.contacts-section
-						h2.contacts-section__title Контактная информация
-						.contacts-section__text
-							include ../../blocks/company-name/company-name
-							include ../../blocks/address/address
-							include ../../blocks/phone/phone
-						.contacts-section__text
-							include ../../blocks/opening-hours/opening-hours
-						.contacts-section__btn
-							a.button(href="javascript:void(0);") Как проехать
-						.contacts-section__btn
-							a.button(href="javascript:void(0);") Обратная связь
-					
-					section.content__section-item.order-section
-						h2.order-section__title Записаться
-						p.order-section__text
-						.order-section__form
-							include ../../blocks/appontment-form/appontment-form
-
-
+		.content__rectangle
+			include ../../blocks/contacts/contacts
+			include ../../blocks/appointment/appointment
