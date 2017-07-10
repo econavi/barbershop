@@ -6,9 +6,11 @@ const svgmin = require('gulp-svgmin'); // Minify SVG
 const cheerio = require('gulp-cheerio'); // manipulate XML files
 const replace = require('gulp-replace'); // String Replace
 const gulpIf = require('gulp-if');
+const fs = require('fs');
 
 
 module.exports = () => (
+
 	gulp.src('app/icons/svg/**/*.svg')
 	.pipe(svgmin({
 		js2svg: {

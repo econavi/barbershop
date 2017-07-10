@@ -7,9 +7,33 @@
 		float left
 		max-width 300px
 		margin-right 20px
-
-		border 1px solid #FFF
+		text-align center
 		
 		&:last-child
 			margin-right 0
+		
+	&__title
+		display block
+		position relative
+		font-size 3rem
+		line-height 4.2rem
+		margin-bottom 30px
+		padding-bottom 35px
+		
+		&::after
+			content ''
+			display block
+			position absolute
+			left 50%
+			bottom 0
+			width 20px
+			height 20px
+			margin-left -10px
+			background #fff
+			transform rotate(45deg)
+			
+		
+	&__text
+		margin 10px
+		margin-bottom 0
 		

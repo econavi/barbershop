@@ -1,0 +1,33 @@
+.button
+	display inline-block
+	vertical-align top
+	margin-right 16px
+	padding 10px 33px
+
+	background #000
+	border none
+	outline none
+	cursor pointer
+	
+	color #FFF
+	font-family 'PT Sans Narrow', sans-serif
+	font-size 1.4rem
+	line-height 2.4rem
+	font-weight 700
+	text-transform uppercase
+	
+	&:hover
+		background #663d15
+	
+	&:active
+		background #000
+	
+	&__disabled, &:disabled
+		cursor default
+		opacity 0.3
+	
+	&:hover:disabled, &__disabled:hover
+		background #000
+		
+		
+	

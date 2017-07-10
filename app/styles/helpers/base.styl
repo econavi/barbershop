@@ -1,5 +1,5 @@
 container()
-	max-width 960px
+	width 960px
 	padding 0 10px
 	margin 0 auto
 
@@ -8,22 +8,32 @@ html
 	
 body
 	color #FFF
-	background #000
+	font-family 'PT Sans Narrow', sans-serif
+	font-size 1.4rem
+	line-height 2.4rem
+	font-weight 700
+	text-transform uppercase
+	background #000 url('../assets/img/general/bg.jpg') no-repeat center top
 
 a 
 	color #FFF
+	text-decoration none
 
 ul
 	list-style-type none
+
+h2
+	font-size 3rem
+	line-height 4.2rem
+	margin-bottom 25px
 
 .content
 	container()
 	
 	&__rectangle
 		clearfix()
-		// background #fbf8f5
+		background url('../assets/img/general/rectangle-content-shadow.png') no-repeat center, 
+			#f8f5f2 url('../assets/img/general/pattern-white.jpg')
+		color #000
 		padding 50px 80px
-		margin-bottom 35px
-		
-		border 1px solid #FFF
-		
+		margin-bottom 35px		

@@ -25,6 +25,7 @@
     <title>Главная страница</title>
     <meta name="description" content="Описание главной страницы">
     <link href="styles/main.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -48,13 +49,13 @@
     <main class="content">
       <div class="main-logo"><img src="assets/img/content/main-logo.png" width="368" height="204" alt="Логотип"></div>
       <ul class="pluses">
-        <li class="pluses__item"><span class="pluses__name">Быстро</span>
+        <li class="pluses__item"><span class="pluses__title">Быстро</span>
           <p class="pluses__text">МЫ&nbsp;ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И&nbsp;ВЫ&nbsp;&mdash; СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
         </li>
-        <li class="pluses__item"><span class="pluses__name">Круто</span>
+        <li class="pluses__item"><span class="pluses__title">Круто</span>
           <p class="pluses__text">ЗАБУДЬТЕ, КАК ВЫ&nbsp;СТРИГЛИСЬ РАНЬШЕ. МЫ&nbsp;СДЕЛАЕМ ИЗ&nbsp;ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО&nbsp;ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
         </li>
-        <li class="pluses__item"><span class="pluses__name">Дорого</span>
+        <li class="pluses__item"><span class="pluses__title">Дорого</span>
           <p class="pluses__text">НАШИ МАСТЕРА&nbsp;&mdash; ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И&nbsp;НЕ&nbsp;МОГУТ СТОИТЬ ДЕШЕВО. К&nbsp;ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ&nbsp;ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
         </li>
       </ul>
@@ -75,31 +76,31 @@
         <section class="gallery">
           <h2 class="gallery__title">Фотогалерея</h2>
           <div class="slider">
-            <figure class="slider__content"><img class="slider__pic" src="assets/img/content/slide-1" alt="" width="286" height="164"></figure>
-            <button class="slider__prev button" type="button">Назад</button>
-            <button class="slider__next button" type="button">Вперед</button>
+            <figure class="slider__content"><img class="slider__pic" src="assets/img/content/slide-1.jpg" alt="" width="285" height="162"></figure>
+            <button class="slider__prev-btn button" type="button">Назад</button>
+            <button class="slider__next-btn button" type="button">Вперед</button>
           </div>
         </section>
       </div>
       <div class="content__rectangle">
         <section class="contacts">
           <h2 class="contacts__title">Контактная информация</h2>
-          <div class="contacts__text"><span class="company-name">БАРБЕРШОП «БОРОДИНСКИЙ»</span><span class="address">АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</span><span class="phone">ТЕЛЕФОН: +7 (495) 666-02-66</span></div>
+          <div class="contacts__text"><span class="company-name">БАРБЕРШОП «БОРОДИНСКИЙ»</span><br><span class="address">АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</span><br><span class="phone">ТЕЛЕФОН: +7 (495) 666-02-66</span></div>
           <div class="contacts__text">
-            <div class="opening-hours"><span class="opening-hours__title">ВРЕМЯ РАБОТЫ:</span><span class="opening-hours__value">ПН — ПТ: С 10:00 ДО 22:00</span><span class="opening-hours__value">ПН — ПТ: С 10:00 ДО 22:00</span></div>
+            <div class="opening-hours"><span class="opening-hours__title">ВРЕМЯ РАБОТЫ:</span><br><span class="opening-hours__value">ПН — ПТ: С 10:00 ДО 22:00</span><br><span class="opening-hours__value">ПН — ПТ: С 10:00 ДО 22:00</span></div>
           </div>
           <div class="contacts__btn"><a class="button" href="javascript:void(0);">Как проехать</a></div>
           <div class="contacts__btn"><a class="button" href="javascript:void(0);">Обратная связь</a></div>
         </section>
         <section class="appointment">
           <h2 class="appointment__title">Записаться</h2>
-          <p class="appointment__text"></p>
+          <p class="appointment__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И&nbsp;ВРЕМЯ И&nbsp;МЫ&nbsp;СВЯЖЕМСЯ С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
           <div class="appointment__form">
             <form class="appointment-form" action="javascript:void(0);" method="">
-              <input class="appointment-form__input input" type="text" name="data" value="" placeholder="Дата">
-              <input class="appointment-form__input input" type="text" name="time" value="" placeholder="Время">
-              <input class="appointment-form__input input" type="text" name="name" value="" placeholder="Ваше имя">
-              <input class="appointment-form__input input" type="tel" name="phone" value="" placeholder="Телефон">
+              <input class="appointment-form__input" type="text" name="data" value="" placeholder="Дата">
+              <input class="appointment-form__input" type="text" name="time" value="" placeholder="Время">
+              <input class="appointment-form__input" type="text" name="name" value="" placeholder="Ваше имя">
+              <input class="appointment-form__input" type="tel" name="phone" value="" placeholder="Телефон">
               <button class="appointment-form__btn button" type="submit">Отправить</button>
             </form>
           </div>
@@ -107,24 +108,17 @@
       </div>
     </main>
     <footer class="footer">
-      <section class="footer__contacts"><span class="company-name">БАРБЕРШОП «БОРОДИНСКИЙ»</span><span class="address">АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</span><a class="footer__link" href="javascript:void(0);">КАК НАС НАЙТИ?</a><span class="phone">ТЕЛЕФОН: +7 (495) 666-02-66</span></section>
-      <section class="footer__social">
-        <div class="social-icons"><span class="social-icons__title">ДАВАЙТЕ ДРУЖИТЬ!</span>
-          <div class="social-icons-list"><a class="social-icons-list__item" href="javascript:void(0);">
-              <svg class="svg-icon icon-vk">
-                <use xlink:href="assets/img/sprites/sprite-icons.svg#vk"></use>
-              </svg></a><a class="social-icons-list__item" href="javascript:void(0);">
-              <svg class="svg-icon icon-fb">
-                <use xlink:href="assets/img/sprites/sprite-icons.svg#fb"></use>
-              </svg></a><a class="social-icons-list__item" href="javascript:void(0);">
-              <svg class="svg-icon icon-ig">
-                <use xlink:href="assets/img/sprites/sprite-icons.svg#ig"></use>
-              </svg></a></div>
-        </div>
-      </section>
-      <section class="footer__copiright">
-        <div class="copiright"><span class="copiright__title">РАЗРАБОТАНО:</span><a class="copiright__link button" href="javascript:void(0);">HTMLACADEMY</a></div>
-      </section>
+      <div class="footer__wrapper">
+        <section class="footer__contacts"><span class="company-name">БАРБЕРШОП «БОРОДИНСКИЙ»</span><br><span class="address">АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</span><br><a class="footer__link" href="javascript:void(0);">КАК НАС НАЙТИ?</a><br><span class="phone">ТЕЛЕФОН: +7 (495) 666-02-66</span></section>
+        <section class="footer__social">
+          <div class="social-icons"><span class="social-icons__title">ДАВАЙТЕ ДРУЖИТЬ!</span>
+            <div class="social-icons-list"><a class="social-icons-list__item icon-vk" href="javascript:void(0);"></a><a class="social-icons-list__item icon-fb" href="javascript:void(0);"></a><a class="social-icons-list__item icon-ig" href="javascript:void(0);"></a></div>
+          </div>
+        </section>
+        <section class="footer__copiright">
+          <div class="copiright"><span class="copiright__title">РАЗРАБОТАНО:</span><a class="copiright__link button" href="javascript:void(0);">HTMLACADEMY</a></div>
+        </section>
+      </div>
     </footer>
     <script src="scripts/main.min.js"></script>
   </body>

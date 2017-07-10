@@ -1,3 +1,3 @@
 # Barbershop
 
-Верстка учебного макета HTML-Academy
+Статичная верстка учебного макета HTML-Academy.  

@@ -12,7 +12,6 @@ module.exports = () => (
 	gulp.src('app/icons/png/**/*.png')
 
 	.pipe(image({
-      //optipng: true
       zopflipng: true
     }))
 	
@@ -22,7 +21,7 @@ module.exports = () => (
 			options.imgPath = imgPath + options.imgName;
 			options.retinaImgPath = imgPath + options.retinaImgName;
 			options.algorithm = 'top-down';
-	        options.padding = 8;
+	        options.padding = 50;
 	        options.cssName = options.cssName.replace(/\.css$/, '.styl');
 			options.cssTemplate = 'png-sprite-template';
 	    }
