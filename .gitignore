@@ -1,5 +1,6 @@
 app/styles/svg-size.styl
 app/styles/sprites
+public
 stuff
 
 *.log
