@@ -1,6 +1,7 @@
 import svg4everybody from 'svg4everybody';
 import logoInner from './../blocks/logo-inner/logo-inner';
-import menuMain from './../blocks/menu-main/menu-main';
+import mainMenu from './../blocks/main-menu/main-menu';
+import modalWindow from './../blocks/modal/modal';
 
 window.onload = () => {
 	svg4everybody();

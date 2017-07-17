@@ -1,0 +1,95 @@
+.login-form
+	width 300px
+	center()
+	margin-bottom 10px
+	
+	&__title
+		margin-bottom 20px
+	
+	&__text
+		display block
+		margin-bottom 10px
+		
+	&__input-text
+		padding-right 40px
+		
+	&__login
+		position relative
+		// width 300px
+		margin-bottom 10px
+		
+		&::after
+			content ''
+			position absolute
+			top 50%
+			right 10px
+			width 16px
+			height 16px
+			margin-top -8px
+			sprite $login
+
+	&__password
+		position relative
+		// width 300px
+		margin-bottom 10px
+		
+		&::after
+			content ''
+			position absolute
+			top 50%
+			right 10px
+			width 16px
+			height 16px
+			margin-top -8px
+			sprite $pass
+		
+	&__checkbox-wrap
+		padding-left 28px
+		position relative
+		cursor pointer
+		
+		&:hover
+			color #663d15
+			
+	&__checkbox
+		display none
+				
+	&__fake-checkbox		
+		position absolute
+		top -3px
+		left 0
+		width 20px
+		height 20px
+		border 2px solid #000
+		
+	&__checkbox:checked + &__fake-checkbox::after, 
+	&__checkbox:checked + &__fake-checkbox::before
+		content ''
+		position absolute
+		top 7px
+		left 1px
+		width 14px
+		height 2px
+		background #000
+	
+	&__checkbox:checked + &__fake-checkbox::after
+		transform rotate(45deg)
+	
+	&__checkbox:checked + &__fake-checkbox::before
+		transform rotate(-45deg)
+			
+	&__restore-link
+		float right
+		color #000	
+	
+	&__btn
+		width 100%
+		margin-top 20px
+
+
+
+
+
+
+
+	
