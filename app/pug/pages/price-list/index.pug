@@ -1,9 +1,38 @@
-extends ../../templates/home-page/template.pug
+extends ../../templates/inner-page/template.pug
 
 block head
 	- var path = '../';
-	- var pageTitle = 'Раздел первого уровня';
-	- var pageDescription = 'Описание раздела первого уровня';
+	- var pageTitle = 'Прайс-лист';
+	- var pageDescription = 'Прайс-лист услуг Barbershop';
 
 block content
-	h1 Раздел первого уровня
+	main.page-inner
+		
+		h1.page-inner__title.title Прайс-лист
+		
+		.page-inner__breadcrumbs
+			include ../../../blocks/breadcrumbs/breadcrumbs.pug
+
+		.page-inner__slogan-wrap
+			span.page-inner__slogan.title.title_xl Истинно мужская классика
+
+		.page-inner__columns
+			.page-inner__column-left
+				h2.page-inner__title-section.page-inner__title-section_short.title.title_m Мы используем только лучшие средства:
+				ul.list
+					li.list__item Baxter of California
+					li.list__item Mr Natty
+					li.list__item Suavecito
+					li.list__item Suavecito
+			
+			.page-inner__column-right
+				h2.page-inner__title-section.page-inner__title-section_short.title.title_m ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:
+				include ../../../blocks/prices-table/prices-table.pug
+
+		.page-inner__columns
+			h2.page-inner__title-section.title.title_m НЕСКОЛЬКО СЛОВ О НАС:
+			.page-inner__column-left
+				p.page-inner__text-section.page-inner__text-section_short Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+
+			.page-inner__column-right
+				p.page-inner__text-section.page-inner__text-section_short Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!		

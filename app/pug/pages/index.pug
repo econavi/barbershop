@@ -1,4 +1,4 @@
-extends ../templates/home-page/template.pug
+extends ../templates/default/template.pug
 
 block head
 	- var path = '';
@@ -6,15 +6,16 @@ block head
 	- var pageDescription = 'Описание главной страницы';
 
 block content
-	main.content
+	main.page-main
 			
 		include ../../blocks/main-logo/main-logo
 		include ../../blocks/pluses/pluses
 
-		.content__rectangle
+		.page-main__rectangle
 			include ../../blocks/news/news
 			include ../../blocks/gallery/gallery
 
-		.content__rectangle
+		.page-main__rectangle
 			include ../../blocks/contacts/contacts
 			include ../../blocks/appointment/appointment
+			

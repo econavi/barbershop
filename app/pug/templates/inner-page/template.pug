@@ -3,11 +3,10 @@ include ../../../blocks/scripts/scripts.pug
 
 doctype html
 html(lang='ru')
-	include head
-	body
-		include ../../../blocks/header-for-inner-page/header-for-inner-page.pug
+	include ../../../blocks/head/head.pug
+	body.body.body_inner-page
+		include ../../../blocks/header/header.pug
 		block content
 		include ../../../blocks/footer/footer.pug
 		+yandex-metrika
 		script(src= path + 'scripts/main.min.js')
-		

@@ -2,7 +2,7 @@
 	var list = [
 		{url: 'javascript:void(0);', name: 'Информация'},
 		{url: 'javascript:void(0);', name: 'Новости'},
-		{url: 'javascript:void(0);', name: 'Прайс-лист'},
+		{url: '/price-list/', name: 'Прайс-лист'},
 		{url: 'javascript:void(0);', name: 'Магазин'},
 		{url: 'javascript:void(0);', name: 'Контакты'}
 	];
@@ -13,6 +13,8 @@ mixin navItem(url, name)
 
 
 nav.main-menu
+	.main-menu__logo
+		include ../logo-inner/logo-inner.pug
 	ul.main-menu__list
 		each i in list
 			+navItem(i.url, i.name)

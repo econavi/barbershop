@@ -1,0 +1,23 @@
+.breadcrumbs
+	list-style-type none
+	
+	.breadcrumbs__item
+		position relative
+		display inline
+		padding-right 40px
+		
+		&_current
+			color #aba9a7
+			
+			&::after
+				display none
+		
+		&::after
+			content ''
+			position absolute
+			top 4px
+			right 14px
+			width 8px
+			height 8px
+			background #000
+			transform rotate(45deg)
