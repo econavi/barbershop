@@ -5,8 +5,9 @@ function Popup(options) {
 
 	var popup = this;
 
-	this.open = function() {
+	this.open = function(elem) {
 		popup.modal.classList.add('modal_open');
+		document.querySelector(elem).style.display = 'block'
 	}
 
 	this.close = function() {
@@ -17,16 +18,16 @@ function Popup(options) {
 	this.closeBtn.onclick = popup.close;
 }
 
-function modalWindow() {
-	var modal = new Popup({
-		modal: '.modal',
-		overlay: '.modal__blur',
-		closeBtn: '.modal__close-btn'
-	});
+var modal = new Popup({
+	modal: '.modal',
+	overlay: '.modal__blur',
+	closeBtn: '.modal__close-btn'
+});
 
-	document.querySelector('.user-block__sign-in').onclick = function() {
-		modal.open();
+function goToModal(trigger, elem) {
+	document.querySelector(trigger).onclick = function() {
+		modal.open(elem);
 	}
 }
 
-modalWindow();
+export { goToModal };
