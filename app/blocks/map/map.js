@@ -1,3 +1,7 @@
-import { goToModal } from './../modal/modal'
+import { modal } from './../modal/modal'
 
-goToModal('.footer__map-link', '.map');
+const mapLink = document.querySelector('.footer__map-link');
+
+mapLink.onclick = (e) => {
+	modal.start('.map')
+}

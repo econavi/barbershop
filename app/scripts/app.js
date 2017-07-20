@@ -4,6 +4,7 @@ import mainMenu from './../blocks/main-menu/main-menu';
 
 import modalWindow from './../blocks/modal/modal';
 import loginForm from './../blocks/login-form/login-form';
+import map from './../blocks/map/map';
 
 
 window.onload = () => {
