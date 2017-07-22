@@ -1,8 +1,16 @@
+$keyframe-name = modal-open
+@keyframes {$keyframe-name}
+	for i in 0..10
+		{10% * i}
+			opacity (i / 10)
+
+
 .modal
 	display none
 	
 	&_open
 		display block
+		animation modal-open 0.2s
 	
 	&__window
 		position absolute

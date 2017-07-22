@@ -15,6 +15,12 @@ function Popup(options) {
 		popup.modal.classList.add('modal_open');
 		document.querySelector(elem).style.display = 'block'
 		window.scrollTo(0, 0)
+		window.onkeydown = function(event) {
+			if(event.keyCode === 27) { // if press ESC
+				popup.close();
+			}
+			window.onkeydown = null;
+		}
 	}
 
 	this.close = function() {
@@ -29,11 +35,13 @@ function Popup(options) {
 	}
 }
 
+
 var modal = new Popup({
 	modal: '.modal',
 	overlay: '.modal__blur',
 	closeBtn: '.modal__close-btn'
 });
+
 
 export { modal };
 
@@ -49,7 +57,7 @@ export { modal };
 
 2. Настроив событие, вызываем функцию - modal(#elem#)
    
-   #elem# - css-селектор dom-элемента, 
+   #elem# - css-селектор элемента, 
    контент которого будет отображен в модальном окне.
 
    Пример:	
@@ -59,7 +67,7 @@ export { modal };
 		modal.start('.map')
 	}	
 
-   По умолчанию, у dom-элемента в стилях, 
+   По умолчанию, у элемента в стилях, 
    должено быть указано свойство - display, со значением - none
 
 */

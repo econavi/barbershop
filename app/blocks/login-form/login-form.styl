@@ -1,7 +1,28 @@
+@keyframes login-form-shake {
+	0%, 100% {
+		transform translateX(0)
+	}
+	
+	10%, 70% {
+		transform translateX(-10px)
+	}
+	
+	30% {
+		transform translateX(10px)
+	}
+	
+	
+}
+
 .login-form
+	position relative
 	width 300px
 	margin 60px 80px
 	display none
+	
+	&_validation_error
+		animation-name login-form-shake
+		animation-duration 0.2s		
 	
 	&__title
 		margin-bottom 20px
