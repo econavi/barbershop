@@ -1,11 +1,16 @@
 // получаем ссылку с href из адресной строки
 var elem = document.querySelectorAll('.main-menu__link');
+let path = window.location.pathname;
 
 for(var i = 0; i < elem.length; i++) {
-	if(elem[i].getAttribute('href') == window.location.pathname) {
-		elem[i].className = 'main-menu__link main-menu__link_active';
-	}
-}
 
+	let hrefElem = elem[i].getAttribute('href');
+
+	// такая проверка нужна для сайта с портфолио
+	if( (hrefElem === path) || (hrefElem === `..${path}`) || (hrefElem === `../..${path}`) ) {
+		elem[i].classList.add('main-menu__link_active');
+	}
+
+}
 
 
