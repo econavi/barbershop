@@ -1,7 +1,14 @@
 import { modal } from './../modal/modal'
 
-const mapLink = document.querySelector('.footer__map-link');
+const mapLinks = [
+	document.querySelector('.footer__map-link'),
+	document.querySelector('.contacts__map-link')
+];
 
-mapLink.onclick = (e) => {
-	modal.start('.map')
+for(let i = 0; i < mapLinks.length; i++) {
+	mapLinks[i].onclick = (e) => {
+		modal.start('.map')
+	}
 }
+
+
