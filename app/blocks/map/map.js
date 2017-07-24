@@ -6,8 +6,11 @@ const mapLinks = [
 ];
 
 for(let i = 0; i < mapLinks.length; i++) {
-	mapLinks[i].onclick = (e) => {
-		modal.start('.map')
+	
+	if(mapLinks[i] != null) {
+		mapLinks[i].onclick = (e) => {
+			modal.start('.map')
+		}
 	}
 }
 
