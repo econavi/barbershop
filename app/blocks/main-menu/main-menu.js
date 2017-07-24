@@ -1,5 +1,6 @@
 const path = window.location.pathname;
 const links = document.querySelectorAll('.main-menu__link');
+const gitHubPagesPath = path.indexOf('catalog/barbershop');
 
 for(let i = 0; i < links.length; i++) {
 
@@ -7,7 +8,6 @@ for(let i = 0; i < links.length; i++) {
 	var href = link.getAttribute('href');
 	const linkPageLev1 = href.indexOf('..');
 	const linkPageLev2 = href.indexOf('../..');
-	const gitHubPagesPath = path.indexOf('catalog/barbershop');
 
 	if(linkPageLev1 != -1) {
 		href = href.substring(2);
@@ -17,11 +17,10 @@ for(let i = 0; i < links.length; i++) {
 	}
 
 	if(gitHubPagesPath != -1) {
-		href = gitHubPagesPath + href;
+		href = '/catalog/barbershop' + href;
 	}
 
 	if(href === path) {
 		links[i].classList.add('main-menu__link_active');
 	}
-
 }
